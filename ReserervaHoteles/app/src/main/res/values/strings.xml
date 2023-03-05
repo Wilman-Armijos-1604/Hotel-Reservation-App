@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyRoom</string>
+    <string name="x_nombre_apellido_ususario">Alison Vasquez</string>
+    <string name="facebook_app_id">345341110666340</string> <string name="fb_login_protocol_scheme">fb345341110666340</string>
+
+
+</resources>

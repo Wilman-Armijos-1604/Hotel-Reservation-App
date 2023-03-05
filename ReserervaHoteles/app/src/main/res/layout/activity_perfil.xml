@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente_linear"
+    tools:context=".Perfil">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_menu_lateral"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/gradiente_linear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_Logo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_baseline_house_24" />
+
+            <TextView
+                android:id="@+id/tv_slogan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="true"
+                android:letterSpacing="0.35"
+                android:text="BEST HOTEL ROOM RECOMENDATIONS APP"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/opciones_menu_lateral"
+
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_btn_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Perfil"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_favoritos"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Favoritos"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_reservar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Reservar"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_mis_reservas"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Mis Reservas"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+
+                android:background="@drawable/opciones_menu_lateral"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_btn_ayuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Ayuda"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_configuracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Configuracion"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_cerrar_session"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Cerrar Session"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+
+
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_copyright_24" />
+
+                <TextView
+                    android:layout_width="211dp"
+                    android:layout_height="match_parent"
+                    android:text="Todos los derechos reservados"
+                    android:textAlignment="center"
+                    android:textColor="@color/X_cafe_Con_Pan"
+                    android:textStyle="italic">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/gradiente_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_menulateral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mate_sc"
+                android:includeFontPadding="true"
+                android:paddingLeft="20dp"
+                android:text="MyRoom"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/tv_img_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/img_perfil"
+                android:layout_width="392dp"
+                android:layout_height="343dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/perfirl_test" />
+
+            <TextView
+                android:id="@+id/tv_nombrePerfil"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="324dp"
+                android:layout_marginEnd="85dp"
+                android:background="@drawable/nombre_usuario"
+                android:padding="10dp"
+                android:text="@string/x_nombre_apellido_ususario"
+                android:textAlignment="center"
+                android:textColor="@color/X_azul_intenso_como_tu_ex"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img_perfil"
+                app:layout_constraintTop_toTopOf="@+id/img_perfil" />
+
+            <LinearLayout
+                android:layout_width="365dp"
+                android:layout_height="302dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="392dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="59dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Correo electrónico:" />
+
+                    <EditText
+                        android:id="@+id/txt_perfil_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        android:layout_width="58dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Género" />
+
+                    <EditText
+                        android:id="@+id/txt_perfil_genero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Nacionalidad"
+                        android:layout_width="55dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nacionalidad" />
+
+                    <EditText
+                        android:id="@+id/txt_perfil_nacionalidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text=""
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_descripcionPersonal"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Descripcion Personal" />
+
+                    <EditText
+                        android:id="@+id/txt_perfil_descripcion_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="12sp"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Lugares Visitados" />
+
+                    <EditText
+                        android:id="@+id/txt_perfil_lugares_visitados"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textSize="12sp"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView233"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="73dp"
+                android:layout_marginTop="374dp"
+                android:layout_marginEnd="84dp"
+                android:background="@drawable/nombre_usuario"
+                android:padding="10dp"
+                android:text="Infrormación"
+                android:textAlignment="center"
+                android:textColor="@color/X_azul_intenso_como_tu_ex"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/img_perfil"
+                app:layout_constraintTop_toTopOf="@+id/img_perfil" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_btn_cancelar_editar_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_negativo"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Cancelar"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_btn_editar_perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_positivo"
+                android:clickable="true"
+                android:padding="10dp"
+                android:text="Editar"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

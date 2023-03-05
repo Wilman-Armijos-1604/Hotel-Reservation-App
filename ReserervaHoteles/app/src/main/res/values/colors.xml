@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="X_azul_intenso_como_tu_ex">#0085FF</color>
+    <color name="X_cafe_Con_Pan">#BF7F7F</color>
+    <color name="X_verde_shrek">#1B8E81</color>
+    <color name="X_durazno_Peach_para_los_compas">#FFD4D4</color>
+    <color name="X_verde_claro_como_sus_ojos">#6DDDD0</color>
+    <color name="X_calcibondk">#FBF3EE</color>
+    <color name="X_celeste_pero_azulado">#62B4FF</color>
+    <color name="X_FinalBackGround">#FEC8A0</color>
+    <color name="X_rojo_pasion_intensa">#F35448</color>
+
+
+</resources>

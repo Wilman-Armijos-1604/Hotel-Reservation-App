@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "813170603791",
+    "project_id": "myroom-a6ce1",
+    "storage_bucket": "myroom-a6ce1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813170603791:android:87787484449d7f300f707a",
+        "android_client_info": {
+          "package_name": "com.example.myroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813170603791-htl7ltatsnnttmh9jgvh51msbtjmikli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbPv25vT6YP45daONHJcoqtqAUazzFHnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813170603791-htl7ltatsnnttmh9jgvh51msbtjmikli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

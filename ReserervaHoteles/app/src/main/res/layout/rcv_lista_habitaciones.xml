@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="403dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente_linear">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_tipo_habitacion"
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_action_name" />
+
+        <ImageView
+            android:id="@+id/img_btn_favoritos"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_favorite_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txv_tipoHabitacionLista"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/nombre_usuario"
+        android:gravity="center"
+        android:text="Habitacion Doble"
+        android:textColor="@color/X_azul_intenso_como_tu_ex"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:background="@drawable/nombre_usuario"
+        android:gravity="center"
+        android:text="Servicios"
+        android:textColor="@color/X_celeste_pero_azulado"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/X_verde_claro_como_sus_ojos"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_primerServicioLista"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:padding="5dp"
+            android:text="wifi" />
+
+        <TextView
+            android:id="@+id/txt_segundoServicioLista"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:padding="5dp"
+            android:text="patio" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/X_verde_claro_como_sus_ojos"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_tercerServicioLista"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:padding="5dp"
+            android:text="Tv" />
+
+        <TextView
+            android:id="@+id/txt_cuartoServicioLista"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:padding="5dp"
+            android:text="32 m2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView234"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Numero de Habitaciones" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_menosNumHabitaciones"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_negativo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_numHabitaciones"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_masNumHabitaciones"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_positivo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="+" />
+
+        <Space
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView2321"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Numero de Adultos" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_menosNumAdultos"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_negativo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_numAdultos"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_masNumAdultos"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_positivo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="+" />
+
+        <Space
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Numero de Niños" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_menosNumNinos"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_negativo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txt_numNinos"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/servicios_habitacion_hotel"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/txt_btn_masNumNinos"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/boton_positivo"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="+" />
+
+        <Space
+            android:layout_width="14dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView323"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="14dp"
+                    android:text="Fecha entrada:" />
+
+                <TextView
+                    android:id="@+id/txt_fechaEntrada"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    tools:text="@tools:sample/date/ddmmyy"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="14dp"
+                    android:text="Fecha salida:" />
+
+                <TextView
+                    android:id="@+id/txt_fechaSalida"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    tools:text="@tools:sample/date/ddmmyy"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_PrecioHabitacion"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+
+            android:gravity="right|center_vertical"
+            android:text="TextView"
+            android:textColor="@color/X_verde_shrek"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_btn_AgregarHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@drawable/boton_positivo"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Añadir Habitación(es)"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente_linear"
+    tools:context=".PreReserva">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv_menu_lateral"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/gradiente_linear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_Logo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_baseline_house_24" />
+
+            <TextView
+                android:id="@+id/tv_slogan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="true"
+                android:letterSpacing="0.35"
+                android:text="BEST HOTEL ROOM RECOMENDATIONS APP"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/opciones_menu_lateral"
+
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_btn_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Perfil"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_favoritos"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Favoritos"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_reservar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Reservar"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_mis_reservas"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Mis Reservas"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+
+                android:background="@drawable/opciones_menu_lateral"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_btn_ayuda"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Ayuda"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_configuracion"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Configuracion"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_btn_cerrar_session"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/opciones_menu_lateral"
+                    android:clickable="true"
+                    android:text="Cerrar Session"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/X_celeste_pero_azulado"
+                    android:textStyle="italic"
+
+                    />
+
+
+
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_baseline_copyright_24" />
+
+                <TextView
+                    android:layout_width="211dp"
+                    android:layout_height="match_parent"
+                    android:text="Todos los derechos reservados"
+                    android:textAlignment="center"
+                    android:textColor="@color/X_cafe_Con_Pan"
+                    android:textStyle="italic">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/gradiente_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/img_btn_menulateral"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_menu_24" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mate_sc"
+                android:includeFontPadding="true"
+                android:paddingLeft="20dp"
+                android:text="MyRoom"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/tv_img_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_baseline_person_24" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="657dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_preReserva_nombreHotel"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@drawable/boton_positivo"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="NombreHotel"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold|italic" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:layout_gravity="center_horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_listaPrereserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/servicios_habitacion_hotel"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="TOTAL:"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_precioTotalPrereserva"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="$ 0.00"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/X_verde_shrek"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_btn_PagohacerReservar"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@drawable/boton_ver_habitacion"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Seleccionar Metodo de Pago"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+    <!-- hola perro-->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_metodo_de_pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_prereserva_metodo_de_pago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_Reserva"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nombre_usuario"
+    android:clickable="true"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/img_ImagenDepende"
+        android:layout_width="89dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <LinearLayout
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiulo"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_campo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Campo1"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_campo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="campo2"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_campo3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="campo3"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_campoDerecha"
+        android:layout_width="81dp"
+        android:layout_height="match_parent"
+        android:includeFontPadding="false"
+        android:paddingTop="25dp"
+        android:text="Derecha"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_verde_shrek"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

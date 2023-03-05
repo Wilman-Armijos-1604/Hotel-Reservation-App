@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/nombre_usuario"
+    android:padding="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_habitacionPrereserva"
+        android:layout_width="89dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/ic_action_name" />
+
+    <LinearLayout
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_tipoHabitacionPrereserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo Habitacion"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_numHabitacionCamaPrereserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="habitacion, camas"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_numAdultosNinosPrereserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="adultos,ninos"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_fechaEntrSalPrereserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="fechaEntradaSalida"
+            android:textAlignment="textStart"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_precioPrereserva"
+        android:layout_width="81dp"
+        android:layout_height="match_parent"
+        android:includeFontPadding="false"
+        android:paddingTop="25dp"
+        android:text="Precio"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_verde_shrek"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_btn_editarHabitacion"
+            android:clickable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/circle_edit"
+            android:padding="3.5dp"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+        <ImageView
+            android:id="@+id/img_btn_eliminarHabitacion"
+            android:clickable="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_delete"
+            android:padding="3.5dp"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+    </LinearLayout>
+
+
+</LinearLayout>

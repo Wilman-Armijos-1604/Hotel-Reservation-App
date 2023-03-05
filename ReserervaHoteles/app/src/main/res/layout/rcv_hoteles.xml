@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_hotelHabitacion"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/nombre_usuario"
+    android:clickable="true"
+    android:padding="5dp">
+
+  <ImageView
+      android:id="@+id/img_hotelLista"
+      android:layout_width="153dp"
+      android:layout_height="match_parent"
+      android:layout_margin="5dp"
+      android:layout_weight="1"
+      android:padding="20dp"
+      android:scaleType="centerCrop"
+      app:srcCompat="@drawable/ic_action_name"
+
+      />
+
+  <LinearLayout
+
+      android:layout_width="211dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+
+      android:orientation="vertical"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/txt_nombre_hotelLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mate_sc"
+        android:text="NombreTexto"
+        android:textColor="@color/X_azul_intenso_como_tu_ex"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_direccionHotelLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt_puntuacionHotelLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Punuacion"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_habitacionLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NombreTipoHabitacion"
+        android:textAlignment="textEnd"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_numeroCamasLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="camas"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_cafe_Con_Pan"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt_adultosNinosHotelLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="adultos noches"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_celeste_pero_azulado"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txt_precioHotelLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_verde_shrek"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_tipoPagoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tipo de pago"
+        android:textAlignment="textEnd"
+        android:textColor="@color/X_celeste_pero_azulado"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+  </LinearLayout>
+</LinearLayout>

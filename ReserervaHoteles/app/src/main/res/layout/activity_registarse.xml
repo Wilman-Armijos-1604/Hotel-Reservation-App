@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiente_linear"
+    tools:context=".Registarse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="false"
+                app:srcCompat="@color/X_celeste_pero_azulado" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="false"
+                app:srcCompat="@color/X_verde_claro_como_sus_ojos" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="false"
+                app:srcCompat="@color/X_calcibondk" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="false"
+                app:srcCompat="@color/X_durazno_Peach_para_los_compas" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cropToPadding="false"
+                app:srcCompat="@color/white" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mate_sc"
+            android:includeFontPadding="true"
+            android:text="MyRoom"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/X_celeste_pero_azulado"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:includeFontPadding="true"
+            android:letterSpacing="0.35"
+            android:text="BEST HOTEL ROOM RECOMENDATIONS APP"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/X_celeste_pero_azulado"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="421dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="Nombre:"
+                android:textColor="@color/X_azul_intenso_como_tu_ex" />
+
+            <EditText
+                android:id="@+id/txt_NombreRegistrar"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border_txt"
+                android:ems="10"
+
+
+                android:includeFontPadding="false"
+
+                android:inputType="text"
+                android:paddingLeft="20dp"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textColorHint="@color/X_celeste_pero_azulado"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="Apellido:"
+                android:textColor="@color/X_azul_intenso_como_tu_ex" />
+
+            <EditText
+                android:id="@+id/txt_ApellidoRegistrar"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border_txt"
+                android:ems="10"
+
+
+                android:includeFontPadding="false"
+
+                android:paddingLeft="20dp"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textColorHint="@color/X_celeste_pero_azulado"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="Correo electrónico:"
+                android:textColor="@color/X_azul_intenso_como_tu_ex" />
+
+            <EditText
+                android:id="@+id/txt_CorreoRegistrar"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border_txt"
+                android:ems="10"
+
+
+                android:includeFontPadding="false"
+
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textColorHint="@color/X_celeste_pero_azulado"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="Contraseña:"
+                android:textColor="@color/X_azul_intenso_como_tu_ex" />
+
+            <EditText
+                android:id="@+id/txt_ContraseñaRegistrar"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border_txt"
+                android:ems="10"
+                android:hint=""
+
+                android:includeFontPadding="false"
+
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textColorHint="@color/X_celeste_pero_azulado"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="15dp"
+                android:text="Confirmar contraseña:"
+                android:textColor="@color/X_azul_intenso_como_tu_ex" />
+
+            <EditText
+                android:id="@+id/txt_RepetirContraseñaRegistrar"
+                android:layout_width="290dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_border_txt"
+                android:ems="10"
+                android:hint="Repita la Contraseña"
+
+                android:includeFontPadding="false"
+
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="@color/X_celeste_pero_azulado"
+                android:textColorHint="@color/X_celeste_pero_azulado"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="34dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="19dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_RegistrarseApp"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/X_verde_claro_como_sus_ojos"
+                android:hapticFeedbackEnabled="false"
+                android:text="Registrarse"
+                android:textAllCaps="false"
+                android:textColor="@color/X_verde_shrek"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/X_verde_shrek"
+                app:strokeWidth="2px" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_SalirApp"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/X_durazno_Peach_para_los_compas"
+                android:text="Salir"
+                android:textAllCaps="false"
+                android:textColor="@color/X_cafe_Con_Pan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/X_cafe_Con_Pan"
+                app:strokeWidth="2px" />
+
+            <Space
+                android:layout_width="27dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/txt_btn_IrInicioSession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingRight="80px"
+            android:text="¿Ya tienes cuenta? Inicia Sesión"
+            android:textAlignment="viewEnd"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
